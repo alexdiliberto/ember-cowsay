@@ -1,0 +1,23 @@
+.cow-say-speech-bubble {
+  padding: 10px 15px;
+  border: 2px dashed black;
+  border-radius: 12px;
+}
+
+.cow-say-bubble-line {
+  border: none;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+
+.cow-say-cow td {
+  vertical-align: top;
+}
+
+.cow-say-cow pre {
+  margin-top: 0;
+}
+
+.cow-say-cow img {
+  margin-top: 15px;
+}
