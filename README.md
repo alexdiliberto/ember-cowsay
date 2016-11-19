@@ -1,6 +1,13 @@
-# Ember-cowsay
+# ember-cowsay
 
-This README outlines the details of collaborating on this Ember addon.
+1. Ember.JS
+2. Cowsay
+3. ????
+4. Profit!!!!
+
+![ember-cowsay terminal screenshot][cowsay-pic]
+
+Because someone had to do it.
 
 ## Installation
 
@@ -9,19 +16,26 @@ This README outlines the details of collaborating on this Ember addon.
 * `npm install`
 * `bower install`
 
-## Running
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
 ## Running Tests
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+* `npm test`
 
 ## Building
 
 * `ember build`
 
+## Release
+
+```sh
+# v0.7.0
+ember release
+# v0.7.1
+ember release --minor
+# v0.8.0
+ember release --major
+# v1.0.0
+```
+
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+
+[cowsay-pic]: https://raw.githubusercontent.com/alexdiliberto/ember-cowsay/master/cowsay.png

@@ -1,0 +1,8 @@
+Data down, actions up
+Convention over configuration
+SDK for the web
+Tomster <3
+A framework for AMBITIOUS web applications
+Solution to the framework hype cycle
+The Ember community
+Ember CLI!
