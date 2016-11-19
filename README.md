@@ -47,4 +47,4 @@ ember release --major
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
 
 [cowsay-pic]: https://raw.githubusercontent.com/alexdiliberto/ember-cowsay/master/cowsay.png
-[example-ussage]: https://github.com/alexdiliberto/ember-cowsay/tree/master/tests/dummy/app/templates/application.hbs
+[example-usage]: https://github.com/alexdiliberto/ember-cowsay/tree/master/tests/dummy/app/templates/application.hbs
