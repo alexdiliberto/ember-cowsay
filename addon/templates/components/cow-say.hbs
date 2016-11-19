@@ -1,0 +1,23 @@
+<div class="cow-say-speech-bubble">
+  {{yield}}
+</div>
+
+<table class="cow-say-cow">
+  <tbody>
+    <tr>
+      <td class="cow-say-bubble-line">
+        <pre><code>
+      \
+       \
+        </code></pre>
+      </td>
+      <td>
+        {{#if image}}
+          <img src={{image}} alt={{altText}}>
+        {{else}}
+          <pre><code>{{cow}}</code></pre>
+        {{/if}}
+      </td>
+    </tr>
+  </tbody>
+</table>

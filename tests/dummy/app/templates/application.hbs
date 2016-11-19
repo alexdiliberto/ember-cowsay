@@ -1,0 +1,15 @@
+<h1>Ember Cowsay</h1>
+
+<div class="cows">
+  {{#cow-say}}
+    Default cowsay
+  {{/cow-say}}
+
+  {{#cow-say cow=customCow}}
+    Cowsay with custom art
+  {{/cow-say}}
+
+  {{#cow-say image="/cow.png"}}
+    Cowsay with custom image
+  {{/cow-say}}
+</div>

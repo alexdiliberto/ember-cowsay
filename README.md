@@ -9,6 +9,9 @@
 
 Because someone had to do it.
 
+Use it in your Ember apps with the `{{cow-say}}` component.
+See [example usage][example-usage].
+
 ## Installation
 
 * `git clone <repository-url>` this repository
@@ -23,6 +26,11 @@ Because someone had to do it.
 ## Building
 
 * `ember build`
+
+## Preview Examples
+
+* `ember serve`
+* Open http://localhost:4200 in a browser
 
 ## Release
 
@@ -39,3 +47,4 @@ ember release --major
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
 
 [cowsay-pic]: https://raw.githubusercontent.com/alexdiliberto/ember-cowsay/master/cowsay.png
+[example-ussage]: https://github.com/alexdiliberto/ember-cowsay/tree/master/tests/dummy/app/templates/application.hbs
