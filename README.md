@@ -9,7 +9,8 @@
 
 Because someone had to do it.
 
-Use it in your Ember apps with the `{{cow-say}}` component.
+
+Also, you can use it in your app templates with the `{{cow-say}}` component.
 See [example usage][example-usage].
 
 ## Installation
