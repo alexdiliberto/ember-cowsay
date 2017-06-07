@@ -1,17 +1,16 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
-var commands = require('./lib/commands');
+const commands = require('./lib/commands');
 
 module.exports = {
   name: 'ember-cowsay',
 
-  included: function(app) {
+  included(app) {
     app.import('vendor/ember-cowsay.css');
   },
 
-  includedCommands: function() {
+  includedCommands() {
     return commands;
   },
 };
-  
