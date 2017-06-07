@@ -1,6 +1,6 @@
 {
   "name": "ember-cowsay",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Ember + Cowsay",
   "keywords": [
     "ember-addon",
