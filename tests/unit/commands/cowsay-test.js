@@ -1,8 +1,9 @@
-/* jshint ignore:start */
-var expect         = require('chai').expect;
-var EOL            = require('os').EOL;
-var commandOptions = require('../../factories/command-options');
-var CowsayCommand  = require('../../../lib/commands/cowsay');
+'use strict';
+
+const expect         = require('chai').expect;
+const EOL            = require('os').EOL;
+const commandOptions = require('../../factories/command-options');
+const CowsayCommand  = require('../../../lib/commands/cowsay');
 
 /*
  -----------------------
@@ -16,13 +17,13 @@ var CowsayCommand  = require('../../../lib/commands/cowsay');
 */
 
 describe('cowsay command', function() {
-  var options;
-  var command;
+  let options;
+  let command;
 
   beforeEach(function() {
     options = commandOptions({
       project: {
-        isEmberCLIProject: function() {
+        isEmberCLIProject() {
           return false;
         }
       }
@@ -32,8 +33,8 @@ describe('cowsay command', function() {
   });
 
   it('runs the cowsay command', function() {
-    return command.validateAndRun().then(function() {
-      var lines = options.ui.output.split(EOL);
+    return command.validateAndRun().then(() => {
+      let lines = options.ui.output.split(EOL);
 
       expect(someLineStartsWith(lines, ' _'), '1st and 3rd lines').to.be.ok;
       expect(someLineStartsWith(lines, '< '), '2nd line').to.be.ok;
@@ -47,9 +48,8 @@ describe('cowsay command', function() {
   });
 });
 
-function someLineStartsWith(lines, search) {
+let someLineStartsWith = (lines, search) => {
   return lines.some(function(line) {
     return line.indexOf(search) === 0;
   });
 }
-/* jshint ignore:end */

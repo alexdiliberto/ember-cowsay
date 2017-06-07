@@ -22,7 +22,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "mocha tests/unit/**/*-test.js"
+    "test": "mocha tests/unit tests/unit/commands"
   },
   "dependencies": {
     "cowsay": "^1.1.9",
@@ -48,8 +48,10 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.13.3",
+    "eslint-plugin-mocha": "^4.9.0",
     "loader.js": "^4.2.3",
     "mocha": "^3.4.2",
+    "mocha-eslint": "^3.0.1",
     "through": "^2.3.8"
   },
   "engines": {
