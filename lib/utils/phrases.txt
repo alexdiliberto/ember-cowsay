@@ -13,3 +13,4 @@ Giant addon ecosystem
 Glimmer!
 Fastboot!
 Ember Engines!
+Stability without stagnation
