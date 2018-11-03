@@ -1,4 +1,3 @@
-/* eslint-env node */
 'use strict';
 
 const defaults      = require('ember-cli-lodash-subset').defaults;

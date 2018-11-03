@@ -1,24 +1,21 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('cow-say', 'Integration | Component | cow say', {
-  integration: true
-});
+module('Integration | Component | cow say', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+  test('it renders a default cow-say block component', async function(assert) {
+    assert.expect(2);
 
-  this.render(hbs`{{cow-say}}`);
+    await render(hbs`
+      {{#cow-say}}
+        Ember Cowsay!!!
+      {{/cow-say}}
+    `);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#cow-say}}
-      template block text
-    {{/cow-say}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+    assert.dom('.cow-say-speech-bubble').hasText('Ember Cowsay!!!');
+    assert.dom('.cow-say-cow').exists({ count: 1 });
+  });
 });
