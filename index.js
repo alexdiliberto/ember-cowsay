@@ -1,10 +1,9 @@
-/* eslint-env node */
 'use strict';
 
 const commands = require('./lib/commands');
 
 module.exports = {
-  name: 'ember-cowsay',
+  name: require('./package').name,
 
   included(app) {
     app.import('vendor/ember-cowsay.css');

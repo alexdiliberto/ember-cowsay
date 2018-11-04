@@ -1,10 +1,9 @@
-/* eslint-env node, mocha */
 'use strict';
 
 const expect         = require('chai').expect;
 const EOL            = require('os').EOL;
-const commandOptions = require('../../factories/command-options');
-const CowsayCommand  = require('../../../lib/commands/cowsay');
+const commandOptions = require('../factories/command-options');
+const CowsayCommand  = require('../../lib/commands/cowsay');
 
 /*
  -----------------------
